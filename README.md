@@ -18,11 +18,25 @@ PROCEDURE:
 
 Step 1: First, I used "ipconfig" to find my local IP range. This IP range is the range in which a router assigns IP addresses dynamically to devices connected to it.
 
+![image](https://github.com/user-attachments/assets/5d31bf7c-2b06-4e13-bcab-c37afcb7eebf)
+
+![image](https://github.com/user-attachments/assets/e64409c1-6e3c-4fcf-b7af-bfe19a627420)
+
+
 Step 2: Then, I used "nmap --help" to find out about the various parameters that can be used to scan through an IP address.
+
+![image](https://github.com/user-attachments/assets/0cb6ae48-47af-4579-b6dc-a15805339af2)
+
 
 Step 3: I found out that "-sS" can be used to perform
 
+![image](https://github.com/user-attachments/assets/cf59f72f-e377-4116-be3c-7cf9e2e5de19)
+
+
 Step 4: Then I ran the given command "nmap -sS <IP_ADDRESS>" on the target
+
+
+
 
 Step 5: The following ports were open and the services used on them were as follows:
 
@@ -30,7 +44,14 @@ Step 5: The following ports were open and the services used on them were as foll
 
 RESULTS:
 
-
+PORT    STATE    SERVICE
+21/tcp  filtered ftp
+23/tcp  filtered telnet
+53/tcp  open     domain
+80/tcp  open     http
+139/tcp filtered netbios-ssn
+443/tcp open     https
+445/tcp filtered microsoft-ds
 
 
 
